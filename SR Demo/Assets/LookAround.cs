@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LookAround : MonoBehaviour
 {
+    [Range(0f, 150f)]
     public float lookSensitivity = 100f;
     public Transform playerBody;
     private float xRotation = 0f;
