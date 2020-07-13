@@ -41,12 +41,12 @@ public class ToggleEnvironment : MonoBehaviour
         if (isVisible)
         {
             // Set text to "push to hide env"
-            textToChange.SetText("PUSH TO HIDE ENVIRONMENT");
+            textToChange.SetText("TAP TO HIDE ENVIRONMENT");
         }
         else
         {
             // Set text to "push to show env"
-            textToChange.SetText("PUSH TO SHOW ENVIRONMENT");
+            textToChange.SetText("TAP TO SHOW ENVIRONMENT");
         }
 
     }
