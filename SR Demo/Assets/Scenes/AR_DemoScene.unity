@@ -178,7 +178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "PUSH TO SHOW \nENVIRONMENT"
+  m_text: PUSH TO SHOW ENVIRONMENT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -247,12 +247,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 4623057}
-    characterCount: 25
+    characterCount: 24
     spriteCount: 0
-    spaceCount: 4
+    spaceCount: 3
     wordCount: 4
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -902,7 +902,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -960}
-  m_SizeDelta: {x: 500, y: 100}
+  m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &872115977
 MonoBehaviour:
@@ -1060,15 +1060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd1b5a22dddd8245ac31f24698cad4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.89
-  gravity: -9.81
-  charController: {fileID: 874118035}
-  groundCheckTransform: {fileID: 778484218}
-  groundDistance: 0.4
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 256
-  jumpHeight: 1
 --- !u!1 &932112722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,8 +1147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4e18cf435f85a94089d8468bea86f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toggledObject: {fileID: 1203399855}
-  textToChange: {fileID: 4623057}
 --- !u!4 &1004316652
 Transform:
   m_ObjectHideFlags: 0
@@ -1942,6 +1931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AttemptUpdate: 1
   m_MatchFrameRate: 1
+  m_TrackingMode: 2
 --- !u!4 &1500176617
 Transform:
   m_ObjectHideFlags: 0
@@ -2262,34 +2252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be76e5f14cfee674cb30b491fb72b09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boost: 3.5
-  positionLerpTime: 0.2
-  mouseSensitivityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.5
-      inSlope: 0
-      outSlope: 5
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 2.5
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  rotationLerpTime: 0.01
-  invertY: 0
 --- !u!20 &1687258584
 Camera:
   m_ObjectHideFlags: 0
@@ -2390,8 +2352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b96d7387d32ea304d9aee414dc2ad0ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookSensitivity: 98
-  playerBody: {fileID: 874118034}
 --- !u!1 &1827300507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,8 +2461,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UseCustomMaterial: 0
   m_CustomMaterial: {fileID: 0}
-  m_UseCustomRendererAsset: 0
-  m_CustomRendererAsset: {fileID: 0}
 --- !u!114 &1827300511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2515,8 +2473,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FocusMode: 1
-  m_LightEstimationMode: 0
+  m_FocusMode: -1
+  m_LightEstimationMode: -1
+  m_AutoFocus: 1
+  m_LightEstimation: 0
+  m_FacingDirection: 1
 --- !u!114 &1827300512
 MonoBehaviour:
   m_ObjectHideFlags: 0
