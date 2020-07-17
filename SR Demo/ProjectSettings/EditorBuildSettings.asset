@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/DemoScene.unity
     guid: ea1d00cd3cd320b4cae908dec37c9a8a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AR_DemoScene.unity
     guid: 829f7d658babd924b9b70fce690a9ec5
   - enabled: 0
-    path: Assets/Scenes/MinimalARscene.unity
-    guid: ef7c9b0cf4cd9b0429c288615162e62f
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/VR_DemoScene.unity
+    guid: ec26488ea6d21ed448943b56a1e730e8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 686bf3540e75900439ee247ab29d0b11,
       type: 2}
